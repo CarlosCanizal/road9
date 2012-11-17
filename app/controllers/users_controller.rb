@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     macAddress = session[:macAddress].to_s
+    #comment
     redirect_to "http://kiwicloud.kiwinetworks.com/road9/index.php?macAddress="+macAddress
     #@user = User.find(params[:id])
 
