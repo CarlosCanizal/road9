@@ -13,7 +13,8 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    redirect_to "http://www.google.com"
+    macAddress = session[:macAddress].to_s
+    redirect_to "http://kiwicloud.kiwinetworks.com/road9/index.php?macAddress="+macAddress
     #@user = User.find(params[:id])
 
     #respond_to do |format|
