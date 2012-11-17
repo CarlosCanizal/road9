@@ -1,4 +1,8 @@
-<% session[:macAddress] = params[:macAddress] %>
+<% 
+if !params[:macAddress].nil?
+	session[:macAddress] = params[:macAddress] 
+end
+%>
 <%= session[:macAddress] %>
 <div id='container'>
 	<div id='header'>
