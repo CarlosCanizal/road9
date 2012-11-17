@@ -1,0 +1,30 @@
+<h1>Listing users</h1>
+
+<table id='userList'>
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Movil</th>
+    <th>Fijo</th>
+    <th>Email</th>
+    <th>Direccion</th>
+    <th>Mac Address</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.lastname %></td>
+    <td><%= user.mobile %></td>
+    <td><%= user.home %></td>
+    <td><%= user.email %></td>
+    <td><%= user.address1 %></td>
+    <td><%= user.macAddress %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,12 @@
+<% session[:macAddress] = params[:macAddress] %>
+<div id='container'>
+	<div id='header'>
+		<%= image_tag("guest-header.jpg", :alt => "header") %>
+	</div>
+	<div id='splashForm'>
+		<%= render 'form' %>
+	</div>
+	<div id='banner'>
+		<%= image_tag("guest-banner.jpg", :alt => "banner") %>
+	</div>
+</div>
