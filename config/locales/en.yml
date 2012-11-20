@@ -18,16 +18,18 @@ en:
       user:
         name: "Nombre"
         lastname: "Apellido"
-        mobile: "Telefono Movil"
-        home: "Telefono Fijo"
-        email: "Correo Electronico"
-        address: "Direcccion"
+        mobile: "Teléfono Movil"
+        home: "Teléfono Fijo"
+        email: "Correo Electrónico"
+        address: "Direccción"
   activerecord:
     attributes:
       user:
         email: "Correo Electrónico"
         name : "Nombre"
         lastname : "Apellido"
+        mobile : "Teléfono Movil"
+        home : "Teléfono de casa"
     errors:
       models:
         user:
@@ -39,3 +41,7 @@ en:
               blank: "es campo requerido"
             lastname:
               blank: "es campo requerido"
+            home:
+              invalid: "tiene un formato invalido"
+            mobile:
+              invalid: "tiene un formato invalido"
